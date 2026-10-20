@@ -1,0 +1,684 @@
+/* =========================
+   WalletWise Login & Signup
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F5F0E8;
+    color: #63553c;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Login and signup box */
+
+.login-container {
+    background-color: #FFFDFA;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(60, 50, 35, 0.08);
+    text-align: center;
+}
+
+/* Website name */
+
+h1 {
+    font-family: 'Georgia Pro', Georgia, serif;
+    color: #706246;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+/* Tagline */
+
+.tagline {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #83765d;
+    font-size: 14px;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+/* Welcome and create account headings */
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #706246;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Description text */
+
+.login-container > p:not(.tagline):not(.signup) {
+    color: #83765d;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Form labels */
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: #705f46;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Input fields */
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #DDD5C8;
+    border-radius: 8px;
+    background-color: #F5F0E8;
+    color: #63553c;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #64593e;
+}
+
+input:focus {
+    outline: 2px solid #F5F0E8;
+    border-color: #706246;
+}
+
+/* Login and signup buttons */
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #706246;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #594B34;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #F5F0E8;
+    outline-offset: 3px;
+}
+
+/* Sign-up and login links */
+
+.signup {
+    font-size: 14px;
+    color: #83765d;
+    margin-top: 25px;
+}
+
+.signup a {
+    color: #706246;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    color: #594B34;
+    text-decoration: underline;
+}
+
+
+/*===============================
+ WalletWise Dashboard
+===============================*/
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #FFFDFA;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(60, 50, 35, 0.08);
+}
+
+/* Dashboard header */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+    font-family: 'Georgia Pro', Georgia, serif;
+    color: #706246;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.dashboard-header .tagline {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.dashboard-header a {
+    color: #83765d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dashboard-header a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome section */
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.welcome-section h2,
+.transactions-section h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.welcome-section p {
+    color: #83765d;
+    font-size: 15px;
+}
+
+/* Summary cards */
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.summary-card {
+    background-color: #E8E1D6;
+    padding: 25px 20px;
+    border-radius: 14px;
+    border-left: 5px solid #70634c;
+}
+
+.summary-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #83765d;
+    margin-bottom: 15px;
+}
+
+.summary-card p {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #706246;
+    overflow-wrap: anywhere;
+}
+
+/* Dashboard sections */
+
+.transactions-section {
+    background-color: #E8E1D6;
+    border: 1px solid #E8E1D6;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+#empty-message {
+    color: #6d6550;
+    font-size: 14px;
+    margin: 15px 0 5px;
+}
+
+/* Transaction list */
+
+.transactions-section ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.transactions-section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 5px;
+    border-bottom: 1px solid #E8E1D6;
+    overflow-wrap: anywhere;
+}
+
+.transactions-section li span:last-child {
+    color: #706246;
+    font-weight: bold;
+}
+
+/* Form layout */
+
+.transactions-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.transactions-section label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #705f46;
+    margin-bottom: 2px;
+}
+
+/* Input fields and dropdown */
+
+.transactions-section input,
+.transactions-section select {
+    background-color: #F5F0E8;
+    color: #63553c;
+    border: 1px solid #DDD5C8;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #DDD5C8;
+    border-radius: 8px;
+    background-color: #F5F0E8;
+    color: #63553c;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.transactions-section input::placeholder {
+    color: #6c6044;
+}
+
+/* Dropdown colours */
+.transactions-section select {
+    background-color: #F5F0E8;
+    color: #706246;
+    border: 1px solid #DDD5C8;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+.transactions-section select option {
+    background-color: #F5F0E8;
+    color: #706246;
+}
+
+.transactions-section input:focus,
+.transactions-section select:focus {
+    outline: 2px solid #F5F0E8;
+    border-color: #706246;
+}
+
+/* Dashboard buttons */
+
+.transactions-section button {
+    width: 100%;
+    padding: 14px;
+    background-color: #706246;
+    color: #F5F0E8;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.transactions-section button:hover {
+    background-color: #594B34;
+}
+
+.transactions-section button:focus-visible,
+.dashboard-header a:focus-visible {
+    outline: 3px solid #F5F0E8;
+    outline-offset: 3px;
+}
+
+/* Responsive layout for phones */
+
+@media (max-width: 650px) {
+    body {
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .dashboard-container {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .dashboard-header {
+        align-items: flex-start;
+    }
+
+    .dashboard-header h1 {
+        font-size: 27px;
+    }
+
+    .dashboard-header a {
+        font-size: 13px;
+        padding-top: 8px;
+    }
+
+    .summary-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .summary-card p {
+        font-size: 22px;
+    }
+
+    .transactions-section {
+        padding: 18px;
+    }
+
+    .welcome-section h2,
+    .transactions-section h2 {
+        font-size: 19px;
+    }
+}
+
+.transactions-section select option:hover,
+.transactions-section select option:checked {
+    background-color: #E8E1D6;
+    color: #706246;
+}
+
+
+/* Custom WalletWise transaction dropdown */
+
+.custom-select {
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.custom-select-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 13px;
+    background-color: #F5F0E8;
+    color: #706246;
+    border: 1px solid #DDD5C8;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.custom-select-trigger:hover {
+    background-color: #E8E1D6;
+}
+
+.custom-select-trigger:focus-visible {
+    outline: 2px solid #706246;
+    outline-offset: 2px;
+}
+
+.dropdown-arrow {
+    color: #706246;
+    transition: transform 0.2s;
+}
+
+.custom-select.is-open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.custom-select-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #FFFDFA;
+    border: 1px solid #DDD5C8;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(60, 50, 35, 0.12);
+    z-index: 10;
+}
+
+.custom-select-options[hidden] {
+    display: none;
+}
+
+.custom-select-option {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #FFFDFA;
+    color: #706246;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.custom-select-option:hover,
+.custom-select-option:focus-visible,
+.custom-select-option[aria-selected="true"] {
+    background-color: #E8E1D6;
+    color: #594B34;
+    outline: none;
+}
+
+
+/* =========================
+   WalletWise Transaction Management
+========================= */
+
+.section-description {
+    color: #83765d;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* Transaction history rows */
+
+#transaction-list .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #DDD5C8;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.transaction-info strong {
+    color: #706246;
+    font-size: 15px;
+}
+
+.transaction-meta {
+    color: #83765d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.transaction-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.transaction-amount {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.income-amount {
+    color: #4f6b43;
+}
+
+.expense-amount {
+    color: #706246;
+}
+
+/* Delete button */
+
+.transactions-section .delete-transaction-button {
+    width: auto;
+    padding: 8px 12px;
+    background-color: #FFFDFA;
+    color: #706246;
+    border: 1px solid #C9BBA4;
+    border-radius: 7px;
+    font-size: 12px;
+    letter-spacing: 0;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+.transactions-section .delete-transaction-button:hover {
+    background-color: #E8E1D6;
+}
+
+/* Spending by category */
+
+#category-summary {
+    list-style: none;
+    margin-top: 18px;
+}
+
+#category-summary .category-summary-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 16px;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #DDD5C8;
+}
+
+.category-summary-name {
+    color: #706246;
+    font-weight: bold;
+}
+
+.category-summary-amount {
+    color: #706246;
+    white-space: nowrap;
+}
+
+.category-progress-track {
+    grid-column: 1 / -1;
+    height: 8px;
+    overflow: hidden;
+    background-color: #DDD5C8;
+    border-radius: 20px;
+}
+
+.category-progress-bar {
+    height: 100%;
+    background-color: #83765d;
+    border-radius: 20px;
+    transition: width 0.25s ease;
+}
+
+.category-summary-note {
+    grid-column: 1 / -1;
+    color: #83765d;
+    font-size: 12px;
+}
+
+/* Make native category selectors match WalletWise */
+
+.transactions-section select {
+    appearance: auto;
+    cursor: pointer;
+}
+
+.transactions-section select:focus-visible {
+    outline: 2px solid #706246;
+    outline-offset: 2px;
+}
+
+/* Keep transaction actions usable on smaller screens */
+
+@media (max-width: 500px) {
+    #transaction-list .transaction-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .transaction-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
