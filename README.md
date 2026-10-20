@@ -21,5 +21,3 @@ WalletWise is a personal finance website designed to help users manage their mon
 
 ## Purpose
 The aim of WalletWise is to make personal finance easier to understand and help users become more aware of their spending habits, but also learn to track their progress financally.
-
-## Autho
