@@ -709,3 +709,34 @@ a:focus-visible {
 #forgot-password:hover {
     text-decoration: underline;
 }
+
+.reset-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fffaf3;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(70, 45, 25, 0.1);
+}
+
+.reset-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.reset-container input {
+    padding: 12px;
+    border: 1px solid #d8c7b5;
+    border-radius: 8px;
+}
+
+.reset-container button {
+    padding: 12px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
