@@ -683,7 +683,7 @@ a:focus-visible {
 }
 
 .logout-btn {
-    background-color: #6f4e37;
+    background-color: #706246;
     color: #fffaf3;
     border: none;
     padding: 10px 18px;
@@ -694,7 +694,7 @@ a:focus-visible {
 }
 
 .logout-btn:hover {
-    background-color: #503725;
+    background-color: #594B34;
 }
 
 #forgot-password {
