@@ -763,3 +763,26 @@ a:focus-visible {
 .reset-container a[href="index.html"]:hover {
     background-color: #503725;
 }
+
+
+/* Back to login — WalletWise styling */
+.reset-container .back-to-login {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6f4e37;
+    color: #fffaf3 !important;
+    border: 1px solid #6f4e37;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none !important;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.reset-container .back-to-login:hover {
+    background-color: #503725;
+    border-color: #503725;
+}
