@@ -740,3 +740,21 @@ a:focus-visible {
     border-radius: 8px;
     cursor: pointer;
 }
+
+
+
+.reset-container > a {
+    display: inline-block;
+    margin-top: 16px;
+    color: #6f4e37;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.reset-container > a:hover {
+    color: #503725;
+    text-decoration: underline;
+}
+
