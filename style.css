@@ -742,19 +742,24 @@ a:focus-visible {
 }
 
 
-
-.reset-container > a {
-    display: inline-block;
-    margin-top: 16px;
-    color: #6f4e37;
+/* WalletWise — Back to login link */
+.reset-container a[href="index.html"] {
+    display: block !important;
+    width: fit-content;
+    margin: 20px auto 0 !important;
+    padding: 10px 18px;
+    background-color: #6f4e37;
+    color: #fffaf3 !important;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
     font-size: 14px;
     font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s ease;
+    text-align: center;
+    text-decoration: none !important;
+    box-sizing: border-box;
 }
 
-.reset-container > a:hover {
-    color: #503725;
-    text-decoration: underline;
+.reset-container a[href="index.html"]:hover {
+    background-color: #503725;
 }
-
