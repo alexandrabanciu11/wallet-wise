@@ -890,3 +890,38 @@ a:focus-visible {
 #newPasswordForm {
     margin-top: 30px;
 }
+
+
+/* Match reset-page buttons to the Log out button */
+.reset-container form button,
+.reset-container .back-to-login {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #706246;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.reset-container form button:hover,
+.reset-container .back-to-login:hover {
+    background-color: #594B34;
+}
+
+.reset-container form button:focus-visible,
+.reset-container .back-to-login:focus-visible {
+    outline: 3px solid #DDD5C8;
+    outline-offset: 3px;
+}
+
