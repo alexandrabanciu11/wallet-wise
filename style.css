@@ -786,3 +786,25 @@ a:focus-visible {
     background-color: #503725;
     border-color: #503725;
 }
+
+
+a.back-to-login,
+.reset-container a.back-to-login,
+.reset-container a.back-to-login:visited {
+    display: inline-block !important;
+    margin-top: 20px !important;
+    padding: 10px 20px !important;
+    background-color: #6f4e37 !important;
+    color: #fffaf3 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-family: inherit !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    text-align: center !important;
+}
+
+a.back-to-login:hover {
+    background-color: #503725 !important;
+}
