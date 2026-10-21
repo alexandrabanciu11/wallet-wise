@@ -982,3 +982,44 @@ a:focus-visible {
     background: transparent;
     opacity: 0.7;
 }
+
+
+
+/* Keep the eye inside the password input */
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-wrapper input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 45px;
+}
+
+.login-container .password-input-wrapper .toggle-password,
+.reset-container .password-input-wrapper .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 4px;
+    background: transparent;
+    border: none;
+    color: #706246;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.login-container .password-input-wrapper .toggle-password:hover,
+.reset-container .password-input-wrapper .toggle-password:hover {
+    background: transparent;
+    color: #594B34;
+}
