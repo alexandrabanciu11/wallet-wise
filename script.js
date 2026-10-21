@@ -46,6 +46,8 @@ if (signupForm) {
                     email: email,
                     password: password,
                     options: {
+                        emailRedirectTo:
+                            "https://alexandrabanciu11.github.io/wallet-wise/",
                         data: {
                             full_name: name
                         }
