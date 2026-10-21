@@ -857,3 +857,31 @@ a:focus-visible {
         font-size: 28px;
     }
 }
+
+
+
+/* Password reset buttons — match the login button */
+.reset-container form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #706246;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.reset-container form button:hover {
+    background-color: #594B34;
+}
+
+.reset-container form button:focus-visible {
+    outline: 3px solid #DDD5C8;
+    outline-offset: 3px;
+}
