@@ -807,5 +807,22 @@ document.addEventListener("DOMContentLoaded", function() {
         : options[selectedIndex].textContent.trim();
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const logoutBtn = document.getElementById("logoutBtn");
 
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", async () => {
+            const { error } =
+                await window.supabaseClient.auth.signOut();
+
+            if (error) {
+                console.error("Logout error:", error);
+                alert("Could not log out. Please try again.");
+                return;
+            }
+
+            window.location.href = "index.html";
+        });
+    }
+});
 
