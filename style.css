@@ -885,3 +885,8 @@ a:focus-visible {
     outline: 3px solid #DDD5C8;
     outline-offset: 3px;
 }
+
+/* Add space between the two password reset forms */
+#newPasswordForm {
+    margin-top: 24px;
+}
