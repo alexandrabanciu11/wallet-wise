@@ -925,3 +925,24 @@ a:focus-visible {
     outline-offset: 3px;
 }
 
+
+/* Make password reset action buttons match Log out */
+.reset-container form button {
+    background-color: #706246;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.reset-container form button:hover {
+    background-color: #594B34;
+}
+
+
